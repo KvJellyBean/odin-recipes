@@ -5,62 +5,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #11061E;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+            background-color: #11061E;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #CFB3EF;
+            width: 60%;
+
+            border-radius: 18px;
+            box-shadow: 0 2px 50px rgb(240, 240, 239);
+            padding: 2em;
+        }
+
+        main h1 {
+            text-align: center;
+            padding: 1em;
+            text-shadow: 0 5px 5px #ECE1F9;
+            color: #6624B2;
+        }
+
+        .container {
+            padding: 2em 5em;
+        }
+
+        .container p {
+            text-align: justify;
+        }
+
+        .container img {
+            text-align: center;
+            margin: 0 auto 2em;
+            display: block;
+        }
+
+        .flex-row {
+            display: flex;
+        }
+
+        .container.flex-row {
+            padding: 0em;
+            gap: 3em;
+            margin-top: 1em;
+        }
+
+        .container.flex-row #box-step {
+            text-align: justify;
+            flex-shrink: 3;
+        }
+
+        .container.flex-row #box-ingredient {
+            flex-grow: 3;
+        }
+
+        section {
+            padding-left: 1em;
+            margin-top: 1em;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Fried Chicken</h1>
-    <div class="container">
-        <img src="https://imgx.sonora.id/crop/0x0:0x0/x/photo/2021/02/24/cjpg-20210224102327.jpg" alt="Fried Chicken">
+    <main>
+        <h1>Fried Chicken</h1>
+        <hr>
+        <div class="container">
+            <img src="https://imgx.sonora.id/crop/0x0:0x0/x/photo/2021/02/24/cjpg-20210224102327.jpg"
+                alt="Fried Chicken">
 
-        <p>Fried chicken is a beloved comfort food that's cherished for its crispy, golden-brown exterior and juicy,
-            tender interior. This classic dish consists of bone-in, skin-on chicken pieces, often thighs and drumsticks,
-            coated in a seasoned flour mixture and deep-fried until irresistibly crunchy. The seasoned flour blend adds
-            a delightful mix of flavors, and the end result is a satisfying and flavorful treat that's perfect for any
-            meal.</p>
-        <div class="flex-row container">
-            <div id="box-ingredient">
-                <h3>Ingredients</h3>
-                <section>
-                    <ul>
-                        <li>4 Bone-in Chicken pieces</li>
-                        <li>1 Cup all-purpose Flour</li>
-                        <li>1 Teaspoon Salt</li>
-                        <li>1/2 Teaspoon Black Pepper</li>
-                        <li>1/2 Teaspoon Paprika</li>
-                        <li>1/2 Teaspoon Garlic Powder</li>
-                        <li>1/2 Teaspoon Onion Powder</li>
-                        <li>Vegetable Oil</li>
-                    </ul>
-                </section>
-            </div>
+            <p>Fried chicken is a beloved comfort food that's cherished for its crispy, golden-brown exterior and
+                juicy,
+                tender interior. This classic dish consists of bone-in, skin-on chicken pieces, often thighs and
+                drumsticks,
+                coated in a seasoned flour mixture and deep-fried until irresistibly crunchy. The seasoned flour
+                blend
+                adds
+                a delightful mix of flavors, and the end result is a satisfying and flavorful treat that's perfect
+                for
+                any
+                meal.</p>
+            <div class="flex-row container">
+                <div id="box-ingredient">
+                    <h3>Ingredients</h3>
+                    <section>
+                        <ul>
+                            <li>4 Bone-in Chicken pieces</li>
+                            <li>1 Cup all-purpose Flour</li>
+                            <li>1 Teaspoon Salt</li>
+                            <li>1/2 Teaspoon Black Pepper</li>
+                            <li>1/2 Teaspoon Paprika</li>
+                            <li>1/2 Teaspoon Garlic Powder</li>
+                            <li>1/2 Teaspoon Onion Powder</li>
+                            <li>Vegetable Oil</li>
+                        </ul>
+                    </section>
+                </div>
 
-            <div id="box-step">
-                <h3>Steps</h3>
-                <section>
-                    <ol>
-                        <li>In a large, deep skillet or deep fryer, pour enough vegetable oil to submerge the chicken
-                            pieces. Heat the oil to 350°F (175°C).</li>
-                        <li>In a shallow dish or a plastic bag, combine the flour, salt, black pepper, paprika, garlic
-                            powder, onion powder, and dried thyme. Mix well.
-                        </li>
-                        <li>Dredge each chicken piece in the seasoned flour mixture, ensuring it's coated evenly. Shake
-                            off any excess flour.</li>
-                        <li>Carefully place the coated chicken pieces into the hot oil, one at a time. Be cautious to
-                            avoid overcrowding the skillet, which can reduce the oil temperature and affect the
-                            crispiness of the chicken.</li>
-                        <li>Fry the chicken for about 12-15 minutes, turning occasionally, until the pieces are golden
-                            brown and the internal temperature reaches at least 165°F (74°C).</li>
-                        <li>Remove the fried chicken from the oil and place it on a plate lined with paper towels to
-                            drain excess oil.</li>
-                        <li>Allow the fried chicken to rest for a few minutes before serving. This helps the chicken
-                            stay juicy and retain its crispy coating.</li>
-                        <li>Serve your simple fried chicken hot with your favorite side dishes, such as mashed potatoes,
-                            coleslaw, or biscuits. Enjoy!</li>
-                    </ol>
-                </section>
+                <div id="box-step">
+                    <h3>Steps</h3>
+                    <section>
+                        <ol>
+                            <li>In a large, deep skillet or deep fryer, pour enough vegetable oil to submerge the
+                                chicken
+                                pieces. Heat the oil to 350°F (175°C).</li>
+                            <li>In a shallow dish or a plastic bag, combine the flour, salt, black pepper, paprika,
+                                garlic
+                                powder, onion powder, and dried thyme. Mix well.
+                            </li>
+                            <li>Dredge each chicken piece in the seasoned flour mixture, ensuring it's coated
+                                evenly.
+                                Shake
+                                off any excess flour.</li>
+                            <li>Carefully place the coated chicken pieces into the hot oil, one at a time. Be
+                                cautious
+                                to
+                                avoid overcrowding the skillet, which can reduce the oil temperature and affect the
+                                crispiness of the chicken.</li>
+                            <li>Fry the chicken for about 12-15 minutes, turning occasionally, until the pieces are
+                                golden
+                                brown and the internal temperature reaches at least 165°F (74°C).</li>
+                            <li>Remove the fried chicken from the oil and place it on a plate lined with paper
+                                towels to
+                                drain excess oil.</li>
+                            <li>Allow the fried chicken to rest for a few minutes before serving. This helps the
+                                chicken
+                                stay juicy and retain its crispy coating.</li>
+                            <li>Serve your simple fried chicken hot with your favorite side dishes, such as mashed
+                                potatoes,
+                                coleslaw, or biscuits. Enjoy!</li>
+                        </ol>
+                    </section>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>
