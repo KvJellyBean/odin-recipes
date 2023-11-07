@@ -5,57 +5,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* border: 1px solid red; */
+            color: #11061E;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+            background-color: #11061E;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #CFB3EF;
+            width: 60%;
+
+            border-radius: 18px;
+            box-shadow: 0 2px 50px rgb(240, 240, 239);
+            padding: 2em;
+        }
+
+        main h1 {
+            text-align: center;
+            padding: 1em;
+            text-shadow: 0 5px 5px #ECE1F9;
+            color: #6624B2;
+        }
+
+        .container {
+            padding: 2em 5em;
+        }
+
+        .container p {
+            text-align: justify;
+        }
+
+        .container img {
+            text-align: center;
+            margin: 0 auto 2em;
+            display: block;
+        }
+
+        .flex-row {
+            display: flex;
+        }
+
+        .container.flex-row {
+            padding: 0em;
+            gap: 3em;
+            margin-top: 1em;
+        }
+
+        .container.flex-row #box-step {
+            text-align: justify;
+            flex-shrink: 3;
+        }
+
+        .container.flex-row #box-ingredient {
+            flex-grow: 3;
+        }
+
+        section {
+            padding-left: 1em;
+            margin-top: 1em;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Lasagna</h1>
+    <main>
+        <h1>Lasagna</h1>
+        <hr>
+        <div class="container">
+            <img src="https://d12man5gwydfvl.cloudfront.net/wp-content/uploads/2017/06/Mau-Bisa-Bikin-Lasagna-Ini-Dia-Resep-Lasagna-Sederhana-Yang-Enak-Banget-dan-Bikin-Kamu-Ketagihan-Masak-Dirumah-940x667.jpg"
+                alt="Lasagna" width="300px">
 
-    <div class="container">
-        <img src="https://d12man5gwydfvl.cloudfront.net/wp-content/uploads/2017/06/Mau-Bisa-Bikin-Lasagna-Ini-Dia-Resep-Lasagna-Sederhana-Yang-Enak-Banget-dan-Bikin-Kamu-Ketagihan-Masak-Dirumah-940x667.jpg"
-            alt="Lasagna">
+            <h2>Description</h2>
+            <p>Lasagna is a classic Italian pasta dish known for its layers of rich, savory flavors. It typically
+                consists
+                of wide flat pasta sheets layered with a delicious mixture of cheese, sauce, and often includes ground
+                meat
+                or vegetables. The entire dish is then baked until it's bubbling and golden, creating a comforting and
+                satisfying meal.</p>
+            <div class="flex-row container">
+                <div id="box-ingredient">
+                    <h3>Ingredients</h3>
+                    <section>
+                        <ul>
+                            <li>12 Lasagna Noodles</li>
+                            <li>450g Ground Beef</li>
+                            <li>1 Onion Finely Chopped</li>
+                            <li>2 Clover Garlic</li>
+                            <li>1 Can Crushed Tomatoes</li>
+                            <li>2 Tablespoon tomato paste</li>
+                            <li>1 Teaspoon Dried Basil</li>
+                            <li>Salt & Pepper</li>
+                            <li>425g Ricotta Cheese</li>
+                            <li>1 Egg</li>
+                            <li>2 Cups Shredded Mozzarella Cheese</li>
+                            <li>1/2 Cup Grated Parmesan Cheese</li>
+                        </ul>
+                    </section>
+                </div>
 
-        <h2>Description</h2>
-        <p>Lasagna is a classic Italian pasta dish known for its layers of rich, savory flavors. It typically consists
-            of wide flat pasta sheets layered with a delicious mixture of cheese, sauce, and often includes ground meat
-            or vegetables. The entire dish is then baked until it's bubbling and golden, creating a comforting and
-            satisfying meal.</p>
-
-        <h3>Ingredients</h3>
-        <ul>
-            <li>12 Lasagna Noodles</li>
-            <li>450g Ground Beef</li>
-            <li>1 Onion Finely Chopped</li>
-            <li>2 Clover Garlic</li>
-            <li>1 Can Crushed Tomatoes</li>
-            <li>2 Tablespoon tomato paste</li>
-            <li>1 Teaspoon Dried Basil</li>
-            <li>Salt & Pepper</li>
-            <li>425g Ricotta Cheese</li>
-            <li>1 Egg</li>
-            <li>2 Cups Shredded Mozzarella Cheese</li>
-            <li>1/2 Cup Grated Parmesan Cheese</li>
-        </ul>
-
-        <h3>Steps</h3>
-        <ol>
-            <li>Preheat your oven to 375°F (190°C).</li>
-            <li>In a large skillet, cook the ground beef over medium heat until browned. Add the chopped onion and
-                garlic and sauté until they become translucent.</li>
-            <li>Stir in the crushed tomatoes, tomato paste, dried basil, salt, and pepper. Simmer the sauce for about 15
-                minutes.</li>
-            <li>In a separate bowl, combine ricotta cheese, 1 cup of shredded mozzarella, 1/4 cup grated Parmesan, one
-                egg, salt, and pepper. Mix well.</li>
-            <li>Cook the lasagna noodles according to the package instructions, then drain.</li>
-            <li>To assemble the lasagna, spread a small amount of the meat sauce in a 9x13-inch baking dish. Place a
-                layer of noodles on top.</li>
-            <li>Spread a portion of the cheese mixture over the noodles, followed by a layer of meat sauce. Repeat the
-                layers, finishing with a top layer of meat sauce.</li>
-            <li>Sprinkle the remaining 1 cup of shredded mozzarella and 1/4 cup grated Parmesan on top.</li>
-            <li>Cover with aluminum foil and bake in the preheated oven for 25-30 minutes.</li>
-            <li>Remove the foil and bake for an additional 10-15 minutes until the top is bubbly and golden.</li>
-            <li>Let it rest for a few minutes before serving. Enjoy your simple homemade lasagna!</li>
-        </ol>
-    </div>
+                <div id="box-step">
+                    <h3>Steps</h3>
+                    <section>
+                        <ol>
+                            <li>Preheat your oven to 375°F (190°C).</li>
+                            <li>In a large skillet, cook the ground beef over medium heat until browned. Add the chopped
+                                onion
+                                and
+                                garlic and sauté until they become translucent.</li>
+                            <li>Stir in the crushed tomatoes, tomato paste, dried basil, salt, and pepper. Simmer the
+                                sauce
+                                for
+                                about 15
+                                minutes.</li>
+                            <li>In a separate bowl, combine ricotta cheese, 1 cup of shredded mozzarella, 1/4 cup grated
+                                Parmesan,
+                                one
+                                egg, salt, and pepper. Mix well.</li>
+                            <li>Cook the lasagna noodles according to the package instructions, then drain.</li>
+                            <li>To assemble the lasagna, spread a small amount of the meat sauce in a 9x13-inch baking
+                                dish.
+                                Place a
+                                layer of noodles on top.</li>
+                            <li>Spread a portion of the cheese mixture over the noodles, followed by a layer of meat
+                                sauce.
+                                Repeat
+                                the
+                                layers, finishing with a top layer of meat sauce.</li>
+                            <li>Sprinkle the remaining 1 cup of shredded mozzarella and 1/4 cup grated Parmesan on top.
+                            </li>
+                            <li>Cover with aluminum foil and bake in the preheated oven for 25-30 minutes.</li>
+                            <li>Remove the foil and bake for an additional 10-15 minutes until the top is bubbly and
+                                golden.
+                            </li>
+                            <li>Let it rest for a few minutes before serving. Enjoy your simple homemade lasagna!</li>
+                        </ol>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
