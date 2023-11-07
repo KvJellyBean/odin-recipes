@@ -7,11 +7,15 @@
     <title>Odin Recipes</title>
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            border: 1px solid red;
+            /* border: 1px solid red; */
+            color: #11061E;
+            font-family: 'Poppins', sans-serif;
         }
 
         body {
@@ -20,6 +24,7 @@
             align-items: center;
             justify-content: center;
             overflow-x: hidden;
+            background-color: #11061E;
         }
 
         main {
@@ -27,12 +32,17 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-color: aqua;
+            background-color: #CFB3EF;
             width: 20%;
+
+            border-radius: 18px;
+            box-shadow: 0 2px 50px rgb(240, 240, 239);
         }
 
         main h1 {
             padding: 1em;
+            text-shadow: 0 5px 5px #ECE1F9;
+            color: #6624B2;
         }
 
         ul {
@@ -44,15 +54,29 @@
 
         ul li {
             list-style-type: none;
-            padding: 1em;
             width: fit-content;
             margin-bottom: .5em;
             margin-top: .5em;
+            width: 18em;
+            border: 1px solid #6624B2;
+            border-radius: 20px;
+        }
+
+        ul li:hover {
+            background-color: #6624B2;
+            border-radius: 20px;
+            color: #ECE1F9;
         }
 
         ul li a {
             padding: 1em;
             text-decoration: none;
+            display: block;
+        }
+
+        ul li a:hover {
+            color: #ECE1F9;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -60,6 +84,7 @@
 <body>
     <main>
         <h1>Odin Recipes</h1>
+        <hr>
         <ul>
             <li>
                 <a href="./recipes/lasagna.html">Lasagna Recipe</a>
